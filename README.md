@@ -1,19 +1,25 @@
-# The work between penetration tests
+# OSPT — Penetration-Testing Practice Framework
 
-A penetration test does not end the questions it creates. This public OSPT-0034 module is a consulting-service guide for the work that follows: finding explanation, technical peer review, formal retest and closure routes, partner handoffs, escalation, and staffing a shared rotation.
+OSPT is a practitioner-built, adaptable way to connect the work around a penetration test: authority, preparation, technical methods, evidence, review, reporting, support, people, and improvement. It sits beside established testing and programme guidance; it is not an accreditation scheme, a replacement for those sources, or permission to test.
 
-The companion essay, [*The Leverage Between Penetration Tests*](https://robhunterworks.com/writing/leverage-between-tests/), explains the experience behind the pattern and where a service might evolve. The guide is the reusable artifact: it includes a local authority map, four response dispositions, fourteen common question patterns, rotation and peer-review expectations, service measures, and a bounded automation path.
+**Current public scope:** this repository contains one released component, [OSPT-0034, the Penetration Testing Consulting Guidebook](OSPT-0034_Penetration_Testing_Consulting_Guidebook.md), and two conceptual diagrams. The larger connected framework is being prepared. Do not treat this repository's present contents as a complete penetration-testing programme, a deployed practice, or a finished standard.
 
-## Use it without importing someone else's authority
+## Use the released component
 
-Start with [the consulting guidebook](OSPT-0034_Penetration_Testing_Consulting_Guidebook.md). Fill the local authority and service profile in §2 before treating any response pattern as operational. Connect the actual closing readout, issue record, retest/closure intake, disclosure process, hours, and escalation owners. Test the routes with the cases in §11. The quick card in §10 is for an on-duty tester after those local decisions exist.
+The consulting guide helps a team give post-test technical questions a reliable home. It covers finding explanation, peer review, formal retest and closure routes, partner handoffs, escalation, rotation, and a bounded path for automation. The companion essay, [*The Leverage Between Penetration Tests*](https://robhunterworks.com/writing/leverage-between-tests/), explains the experience behind the pattern; the guide is the reusable working material.
 
-The guide is an adaptable template, not an adopted policy, an authorization to test, an SLA, a risk decision, or evidence that a particular organization implemented the service. Its OSPT identifier preserves its place in a larger program-standard effort; referenced companion modules are still being prepared for public release. This first module is self-contained for consulting-service design.
+Begin with the guide's local authority and service profile. Connect the actual closing readout, issue record, retest/closure intake, disclosure process, coverage hours, backup, and escalation owners. Exercise the examples before using its quick card on duty. An adopter supplies its own policy, authorization, records, roles, and service commitments.
 
-The diagrams used in the essay are included under [diagrams](diagrams/): one shows the change from person-dependent follow-up to shared routes; the other shows how staffing shape changes with demand and support. They are conceptual, not measured outcomes or universal staffing formulas.
+The [diagrams](diagrams/) illustrate the change from person-dependent follow-up to shared routes and the staffing choices that may follow changing demand. They are conceptual; they are not measured outcomes or universal staffing formulas.
+
+## What the full framework will add
+
+The framework under development connects this support component to document control, testing authority, an engagement method, domain-specific technical guides, scope and rules-of-engagement aids, evidence and reporting, team capability, and a correction loop. Its component register will make each document's job, status, dependencies, limits, and change history visible. Those components are **not** implied to be available merely because they are named here.
+
+The baseline is human-led testing. AI as a target and AI as a testing capability are distinct, versioned extensions; neither turns generated output into an accepted finding or transfers authority from a person.
 
 ## Boundaries
 
-This repository contains no employer procedures, customer records, issue data, credentials, controlled reports, or private engagement evidence. An adopter must supply its own policy, authorization, systems, and approval roles. The guide does not make any AI tool an authority over scope, finding validity, risk, disclosure, or customer commitments.
+This repository contains no employer procedures, customer records, issue data, credentials, controlled reports, or private engagement evidence. A public document does not certify that another organization adopted it or that its practices are operating. If you find an error or unsafe implication in the released guide, use the repository's [security and correction route](SECURITY.md).
 
 Copyright © 2026 Rob Hunter. Original material is released under the [MIT License](LICENSE).

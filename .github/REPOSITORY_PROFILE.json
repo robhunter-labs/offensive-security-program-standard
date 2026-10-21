@@ -1,11 +1,11 @@
 {
   "schema": "kingdom.repository-profile.v1",
   "repository": {
-    "name": "robhunter-labs/offensive-security-program-standard",
-    "expected_remote": "https://github.com/robhunter-labs/offensive-security-program-standard.git",
+    "name": "robhunter-labs/penetration-testing-practice-framework",
+    "expected_remote": "https://github.com/robhunter-labs/penetration-testing-practice-framework.git",
     "default_branch": "main"
   },
-  "purpose": "Public, adaptable offensive-security practice modules, beginning with the post-test consulting guidebook.",
+  "purpose": "Public, adaptable penetration-testing practice framework components; the currently released component is the post-test consulting guidebook.",
   "owner_node": "RobHunterLabs",
   "steward": "RobHunterLabs",
   "visibility": "public",

@@ -1,5 +1,7 @@
 # Penetration Testing Consulting Guidebook
 
+> Framework component for adaptation. Publication does not authorize testing, certify conformance, or establish that an organization has adopted this practice.
+
 ## Reader headlines
 
 **Primary audience:** Penetration testers assigned to consulting duty; the technical and program leaders who staff and support them; and organizations adapting a post-test consulting service.
@@ -15,8 +17,8 @@
 | Field | Detail |
 |---|---|
 | **Document** | OSPT-0034 |
-| **Status** | Public template candidate |
-| **Type** | T2 — reference operating guide |
+| **Status** | Published framework component; local adoption is a separate decision. |
+| **Type** | Adaptable procedure / operating guide; not an authorization or adopted local policy |
 | **Maintainer** | OSPT standard maintainers until a local program assigns an owner |
 | **Local approval authority** | Defined by the adopting organization |
 | **Review trigger** | Material change to testing authority, service routes, source policy, staffing, evidence expectations, disclosure, or automation behavior |
@@ -26,7 +28,7 @@
 
 ## Where this fits
 
-An adopter needs its own authorization boundary, testing and finding method, and enforceable engagement scope. Other OSPT modules that formalize these areas are in development; this release stands on its own as a consulting-service template. This guide covers the continuing service around a reported test: explanation, evidence and retest guidance, technical quality review, partner routing, and accountable handoff. The issue-record system and the organization's vulnerability-management process remain authoritative for finding state and formal retest or closure. If AI affects finding substance or takes testing action, a separately approved AI-use policy and tool-specific procedure also apply.
+An adopter needs its own authorization boundary, testing and finding method, and enforceable engagement scope. In the full framework, read this guide alongside document control (OSPT-0001), authority (OSPT-0003), the umbrella test method (OSPT-0009), scoping and rules of engagement (OSPT-0023/0024), evidence/reporting (OSPT-0027/0037), and the urgent-response and closing-readout companions (OSPT-0033/0035). Those components do different jobs; none makes the consulting desk an approval authority. This guide covers the continuing service around a reported test: explanation, evidence and retest guidance, technical quality review, partner routing, and accountable handoff. The issue-record system and the organization's vulnerability-management process remain authoritative for finding state and formal retest or closure. If AI affects finding substance or takes testing action, OSPT-0005's capability boundary and a locally approved tool procedure also apply.
 
 The consulting service supports those systems; it does not replace them. A new target, materially expanded scope, or full retest outside the existing authorized route returns to engagement intake and authorization.
 
@@ -102,6 +104,26 @@ These are reusable decision patterns, not universal verdicts or employer-specifi
 | **14. Centrally managed configuration** | Exploitability evidence, affected component, central platform owner, and remediation constraints. | Keep technical validity separate from ownership. Engage the platform owner for a systemic fix or the risk owner for a documented exception; blocked remediation is not proof of a false positive. |
 
 For a pattern that does not fit, stop using the template and write the case-specific question for peer review. New recurring patterns should be added only after the source, decision boundary, and next actor are understood.
+
+### 3.3 Recognize the shape of pushback
+
+Pushback can contain a new fact, a different decision request, or both. The desk's job is to separate them before replying. A new technical fact gets reviewed on its merits; repetition alone does not make it new, and a difficult schedule does not transfer approval authority to the tester.
+
+| Shape of the request | What may have changed | Desk posture and next route |
+|---|---|---|
+| “It is only a test or internal system.” | The environment, exposure, identity or data classification may have been recorded incorrectly. | Verify the factual change against the tested condition and local method. If it is material, obtain technical review. Do not re-score merely to relieve schedule pressure. |
+| “Another team owns the fix.” | The responsible component or effective remediation owner may be elsewhere. | Help name the partner and the joint next action. Keep issue ownership and technical validity separate; use the local reassignment or exception route where warranted. |
+| “We need to ship before the fix.” | A genuine deadline or business constraint may exist. | State the technical condition and documented risk route. The desk neither grants an extension nor closes the finding in conversation. |
+| “Can we have another call?” | There may be new evidence, a new decision-maker, or simply an unresolved path. | Ask for the new fact and desired decision before the call. Route technical change to review; use the meeting to clarify owners and next actions when the evidence has not changed. |
+| “Can you also test this?” | A new target, operation or environment may be implicated. | Record the question and send it through engagement intake and authorization. Do not turn a consulting exchange into an unscoped test. |
+| “I messaged the original tester.” | A direct conversation may contain relevant evidence but bypass the shared record. | Acknowledge the contact, preserve the useful context, and move the request and decision into the staffed route. |
+| “This is a false positive.” | A control, fixture, target state or interpretation may have been missed. | Invite specific contrary evidence. Seek a qualified technical review against the original test; do not reject the challenge or accept it by label alone. |
+
+These are question shapes, not customer motives. An adopter should replace the generic routes with its own current records, partners, authority, and response examples.
+
+### 3.4 Decide whether a retest is ready
+
+Before promising a retest or starting its local clock, verify the original issue and authorized target, the changed build or control, the environment in which that change is available, access for the approved actor, the expected result, evidence already supplied, the permitted test action, and the stop contact. A missing input is a readiness question to return to the requester; a materially different target or test action is a scope question for engagement authority. The issue system records the formal request, disposition, and result. Local policy—not this guide—sets the clock and whether an evidence-only closure review is permitted.
 
 ## 4. Set expectations at the closing readout
 
